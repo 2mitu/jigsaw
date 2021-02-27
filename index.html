@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Felix's Jigsaw Puzzle</title>
+        <link href="styles/puzzle.css" rel="stylesheet" />
+        <script src="scripts/puzzle.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>来，拯救这个世界！</h1>
+            <img src="images/logo.jpg" alt="Felix's logo" onclick="about();">
+        </header>
+        <main>
+            <article>
+                <ul id="puzzle_area">
+                </ul>
+            </article>
+            <aside id="aside">
+                <div id="stepBox">
+                    <div>步数:</div>
+                    <div id="stepCount" class="stepCount">0</div>
+                </div>
+                <div id="timeBox">
+                    <div>时间:</div>
+                    <div id="timeLasting">0</div>秒
+                </div>
+                <img id="thumb" src="images/logo.jpg" onclick="hideShowThumb()">
+                <section>
+                    <input type="file" id="selectPicture" accept="image/gif, image/jpeg" onchange="selectNewPicture()"/>
+                    <button onclick="updateInfo()">开始拼图</button>
+                    <button onclick="blockShuffle()">重排图片</button>
+                </section>
+                <p id="levelPanel">
+                    <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="changeLevel(3);"/> <label for="easy">初级</label>
+                    <input type="radio" name="level" id="medium" value="4" onchange="changeLevel(4);" /><label for="medium">中级</label>
+                    <input type="radio" name="level" id="hard" value="5" onchange="changeLevel(5);" /><label for="hard">高级</label>
+                </p>
+            </aside>
+        </main>
+        <footer id="footer">
+            <hr>
+            <p>Copyright 2021@Felix  按住图块拖动并释放到合适的位置，直到所有所有图块拼成右图所示原始图片。</p>
+        </footer>
+    </body>
+</html>
