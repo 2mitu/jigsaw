@@ -1,0 +1,102 @@
+html, body {
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    font-size: 10px;
+    background-color: #a9a9a9;
+}
+
+body {
+    width: 98%;
+    min-width: 800px;
+    margin:0px 0px 0px 0px; 
+}
+
+header {
+    margin-bottom: 5px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header h1 {
+    color: #2a2a2a; 
+    flex: 2;
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    margin: 10px;
+}
+  
+header img {
+    display: block;
+    height: 50px;
+    margin: 15px;
+}
+
+main {
+    display: flex;
+    padding: 0px;
+}
+
+article {
+    flex: 4;
+    display: flex;
+    justify-content:center;
+}
+
+ul {
+    border:1px solid #a46;
+    display: inline-block;
+    text-align: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    float: left;
+}
+  
+aside {
+    background-color: rgba(0, 110, 255, 0.226);
+    padding: 1%;
+    font-size: 20px;
+    flex: 1;
+    margin-left: 10px;    
+    display: inline-block;
+    vertical-align: top;
+    width:280px;
+}
+
+aside img {
+    max-width: 100%;
+    filter: blur(10px);
+}
+
+#stepBox, #timeBox {
+    display:inline-block;
+    width:48%;
+}
+
+#stepBox div {
+    display:inline-block;
+    padding:1px 4px;
+    margin: 0px auto;
+}
+
+#timeBox div {
+    display:inline-block;
+    padding:1px 4px;
+    margin: 0px auto;
+}
+
+footer {
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
