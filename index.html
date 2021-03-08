@@ -8,7 +8,7 @@
     </head>
     <body>
         <header id="header">
-            <h1>来，拯救这个世界！</h1>
+            <h1 id="tipinfo">来，拯救这个世界！</h1>
             <img src="images/logo.jpg" alt="Felix's logo" onclick="about();">
         </header>
         <main>
@@ -28,7 +28,7 @@
                 <img id="thumb" src="images/bird.jpg" onclick="hideShowThumb()">
                 <section>
                     <input type="file" id="selectPicture" accept="image/gif, image/jpeg" onchange="selectNewPicture()"/>
-                    <button onclick="updateInfo()">开始拼图</button>
+                    <button onclick="updatePuzzleDisplay()">开始拼图</button>
                     <button onclick="blockShuffle()">重排图片</button>
                 </section>
                 <p id="levelPanel">
@@ -40,7 +40,7 @@
         </main>
         <footer id="footer">
             <hr>
-            <p>Copyright 2021@Felix  按住图块拖动并释放到合适的位置，直到所有所有图块拼成右图所示原始图片。</p>
+            <p>Copyright 2021@Felix  按住图块拖动并释放到合适的位置，如果需要请点击旋转图块，直到所有所有图块拼成右图所示原始图片。</p>
         </footer>
     </body>
 </html>

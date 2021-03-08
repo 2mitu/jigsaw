@@ -47,7 +47,7 @@ article {
 }
 
 ul {
-    border:1px solid #a46;
+    /* border:1px solid #a46; */
     display: inline-block;
     text-align: left;
     list-style-type: none;
